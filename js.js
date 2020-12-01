@@ -51,6 +51,9 @@ function generateDialogue(){
     }
     
     document.getElementById('dialogue').innerHTML = display;
+    var element = document.getElementById("peopleArea");
+    element.classList.remove("hidden");
+    element.classList.add("peopleAreaClass");
     document.getElementById('peopleArea').innerHTML = displayPeople;
 }
 

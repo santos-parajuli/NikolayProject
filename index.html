@@ -10,25 +10,30 @@
     </head>
     <body>
         <div class="container">
-            <div class="leftContainer">
-                <textarea id="conversation" placeholder="
+            <div class="topContainer">
+                <div class="topRight">
+                    <h1>Your dialogue will be printed here.</h1>
+                </div>
+            </div>
+            <div class="boxContainer">
+                <div class="leftContainer">
+                    <textarea id="conversation" placeholder="
 ENTER CONVERSATION IN FORMAT
 PERSON1: TEXT......
 PERSON2: TEXT......
-PERSON3: TEXT......" ></textarea> <br>
-                <button type="button" onclick="generateDialogue()"> Generate Dialogue</button>
-            </div>
-            <div class="rightContainer">
-                <h1>Your dialogue will be printed here.</h1>
-                <div id="peopleArea">
-
+PERSON3: TEXT......"></textarea> <br>
+                        <button type="button" onclick="generateDialogue()"> Generate Dialogue</button>
                 </div>
-                <div id="dialogue">
-
+                <div class="rightContainer">
+                    <div class="hiddenTop">
+                        <h1>Your dialogue will be printed here.</h1>
+                    </div>
+                    <div id="peopleArea" class="hidden">
+                    </div>
+                    <div id="dialogue">
+                    </div>
                 </div>
             </div>
-
-        </div>
-       
+        </div>      
     </body>
 </html>
