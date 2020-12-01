@@ -22,9 +22,14 @@ function generateDialogue(){
                 console.log(dialogArr[0].toUpperCase())
                 if(!people.includes(dialogArr[0].toUpperCase())){
                 people.push(dialogArr[0].toUpperCase());
-
-                        displayPeople +=`<div class="people">
-                    <img class="avatar1" src=${avatar}> <p class="peopleName">${dialogArr[0]}</p>
+                 var fullname=dialogArr[0].toUpperCase().split(" ")
+                    if(fullname.length==1){
+                        var name=dialogArr[0].toUpperCase()
+                    }else{
+                        name=fullname[0]
+                    }
+                    displayPeople +=`<div class="people">
+                    <img class="avatar1" src=${avatar}> <p class="peopleName">${name}</p>
                     </div>
                     `
                 }
