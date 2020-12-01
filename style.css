@@ -38,13 +38,14 @@ h1 {
 .leftContainer {
   height: 80vh;
   width: 30%;
-  margin-left: 20px;
 }
 .rightContainer {
   width: 70%;
 }
 .leftContainer textarea {
-  width: 20vw;
+  width: 80%;
+  margin-left: 5%;
+  margin-right: 5%;
   height: 65%;
   background-color: #fff;
   border-color: royalblue;
@@ -96,6 +97,9 @@ button {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 button:hover {
   background-color: #4caf50; /* Green */
@@ -127,7 +131,7 @@ button:hover {
   display: none;
 }
 
-@media only screen and (max-width: 600px) {
+@media (max-width: 600px) {
   .topContainer {
     display: none;
   }
