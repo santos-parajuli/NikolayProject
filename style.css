@@ -32,6 +32,7 @@ h1 {
 }
 .leftContainer textarea {
   width: 20vw;
+  height: 55vh;
   background-color: #fff;
   border-color: royalblue;
   border-width: 4px;
@@ -90,12 +91,12 @@ button:hover {
   background-color: #fff;
   border-radius: 25px;
   justify-content: center;
-  padding-top: 15px;
+  align-content: center;
   margin-bottom: 10px;
   flex-direction: row;
 }
 .people {
-  margin-right: 15px;
+  margin-top: 15px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -104,4 +105,20 @@ button:hover {
 .avatar1 {
   border-radius: 50%;
   height: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    width: 100%;
+  }
+  .leftContainer,
+  .rightContainer {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .leftContainer textarea {
+    width: 80%;
+  }
 }

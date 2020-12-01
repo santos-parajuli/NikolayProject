@@ -51,7 +51,6 @@ function generateDialogue(){
     }
     
     document.getElementById('dialogue').innerHTML = display;
-     document.getElementById('peopleArea').innerHTML = displayPeople;
-
+    document.getElementById('peopleArea').innerHTML = displayPeople;
 }
 
