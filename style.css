@@ -115,6 +115,7 @@ button:hover {
 }
 .people {
   margin-top: 15px;
+    margin-left: 15px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -123,6 +124,7 @@ button:hover {
 .avatar1 {
   border-radius: 50%;
   height: 50px;
+  width: 50px;
 }
 .hidden {
   display: none;
