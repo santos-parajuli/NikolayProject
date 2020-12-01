@@ -5,17 +5,30 @@ function generateDialogue(){
     if(dialogues.length){
         // splitting the whole conversation into single single conversations 
         var arr = dialogues.split("\n");
+        //["teacher:hi","student:hello"]
         var display=""
+        var people=[]
+        var displayPeople=""
         var left=true
         //looping through all conversations so that we can display each dialogue with their respective avatar
         for (dialogue in arr){
+            //"teacher:hi" avatar:teacher actualDialog: hi
             var dialogArr = arr[dialogue].split(':'); // splitting our speaker name and actual dialogue i.e "teacher : hi "  it will split it in["teacher","hi"]
             //this if statement checks wheter or not we gave proper foramt i.e "person:dialogue" suppose we gave input as teacher only then it have no dialogue so it wont display that. 
             if(dialogArr.length!=1){
-                var avatar = "https://i.pravatar.cc/150?u="+dialogArr[0]; // getting random avatar based on name
+                var avatar = "https://i.pravatar.cc/150?u="+dialogArr[0].toUpperCase(); // getting random avatar based on name
                 var actualDialogue = dialogArr[1];
                 // this if statement is used to alter the chat dialogue ui. 
-                if (left){
+                console.log(dialogArr[0].toUpperCase())
+                if(!people.includes(dialogArr[0].toUpperCase())){
+                people.push(dialogArr[0].toUpperCase());
+
+                        displayPeople +=`<div class="people">
+                    <img class="avatar1" src=${avatar}> <p class="peopleName">${dialogArr[0]}</p>
+                    </div>
+                    `
+                }
+                if (dialogArr[0].toUpperCase()!=="TEACHER"){                    
                     // this is to intorpolate out html as per the dialogue provided
                     display += `
                         <div class="individualDialogue">
@@ -26,7 +39,7 @@ function generateDialogue(){
                     // this is to intorpolate out html as per the dialogue provided with float right
                     display += `
                         <div class="individualDialogueRight">
-                        <p> ${actualDialogue} </p>
+                        <p style="color:white;background-color:#05728f"> ${actualDialogue} </p>
                         <img class="avatar" src=${avatar}> 
                         </div>`
                 }
@@ -38,6 +51,7 @@ function generateDialogue(){
     }
     
     document.getElementById('dialogue').innerHTML = display;
+     document.getElementById('peopleArea').innerHTML = displayPeople;
 
 }
 

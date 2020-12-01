@@ -25,20 +25,29 @@ h1 {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  width: 50%;
+  width: 30%;
 }
 .rightContainer {
-  width: 50%;
+  width: 70%;
 }
 .leftContainer textarea {
-  width: 40vw;
-  background-color: #f7f7f7;
+  width: 20vw;
+  background-color: #fff;
+  border-color: royalblue;
+  border-width: 4px;
+  border-radius: 25px;
+  padding: 25px;
+  font-size: 18px;
 }
+
 #dialogue {
   padding: 70px;
   display: flex;
   flex-direction: column;
-  background-color: #f7f7f7;
+  border-radius: 25px;
+  background-color: #fff;
+  height: 45vh;
+  overflow: scroll;
   margin-right: 20px;
 }
 .individualDialogue,
@@ -49,13 +58,13 @@ h1 {
 }
 .avatar {
   border-radius: 50%;
-  height: 100px;
+  height: 80px;
 }
 #dialogue p {
   margin-left: 10px;
   /* change the value of color as you want */
-  background-color: red;
-  border-radius: 15px;
+  background-color: #f0f0f0;
+  border-radius: 25px;
   padding: 30px;
 }
 
@@ -75,4 +84,24 @@ button {
 }
 button:hover {
   background-color: #4caf50; /* Green */
+}
+#peopleArea {
+  display: flex;
+  background-color: #fff;
+  border-radius: 25px;
+  justify-content: center;
+  padding-top: 15px;
+  margin-bottom: 10px;
+  flex-direction: row;
+}
+.people {
+  margin-right: 15px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.avatar1 {
+  border-radius: 50%;
+  height: 50px;
 }
