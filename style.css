@@ -81,7 +81,7 @@ h1 {
   /* change the value of color as you want */
   background-color: #f0f0f0;
   border-radius: 25px;
-  padding: 20px;
+  padding: 10px 20px 10px 20px;
 }
 
 .individualDialogueRight {
