@@ -74,14 +74,14 @@ h1 {
 }
 .avatar {
   border-radius: 50%;
-  height: 80px;
+  height: 50px;
 }
 #dialogue p {
   margin-left: 10px;
   /* change the value of color as you want */
   background-color: #f0f0f0;
   border-radius: 25px;
-  padding: 30px;
+  padding: 20px;
 }
 
 .individualDialogueRight {

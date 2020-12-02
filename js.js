@@ -33,7 +33,7 @@ function generateDialogue(){
                     </div>
                     `
                 }
-                if (dialogArr[0].toUpperCase()!=="TEACHER"){                    
+                if (dialogArr[0].toUpperCase()!=="TEACHER" && dialogArr[0].toUpperCase()!=="T"){                    
                     // this is to intorpolate out html as per the dialogue provided
                     display += `
                         <div class="individualDialogue">
